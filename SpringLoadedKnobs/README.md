@@ -56,6 +56,8 @@ If you made the gaskets with regular silicone compound, they will be quite soft 
 
 For the **knobs:** as with the originals, **ABS** is recommended for heat resistance. Print slowly and if possible, provide moderate cooling to get an accurate result. See the main README in the top level of this repository for more details.
 
+All these parts should be printed at 0.1 mm layers. Infill doesn't really matter.
+
 The knobs are available in both fine and coarse threads, and normal and small sizes, like the originals. Print the knob that matches the pin thread and bracket height you're using. You should print the normal size knobs unless you have a very thin bed that would cause the knobs to stick out above the glass.
 
 For the **gasket mold:** again see the [Customizable Gasket Mold Maker page](https://www.thingiverse.com/thing:2287689) for instructions. In a very short nutshell: use **ABS** because it seems the least sticky to the silicone.
@@ -64,7 +66,7 @@ To avoid that the tip of the alignment cone becomes a molten blob due to short l
 * print the molds together with something else to increase the time between layers.
 * provide all the cooling you can muster while the cone is being printed.
 
-For the **printable gasket/spring:** just print it in a sufficiently flexible/elastic filament. When in doubt, set infill to 100% although this shouldn't matter because the model is hollow.
+For the **printable gasket/spring:** just print it in a sufficiently flexible/elastic filament, like NinjaFlex or similar. When in doubt, set infill to 100% although this shouldn't matter because the model is hollow.
  
 
 ## Background Information
