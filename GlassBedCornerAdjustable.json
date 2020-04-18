@@ -1,0 +1,24 @@
+{
+    "parameterSets": {
+        "Lex' glass bed": {
+            "allowTabInset": "no",
+            "bedDepth": "153.5",
+            "bedThickness": "8.6",
+            "bedWidth": "231",
+            "bracketPositions": "FrontRight+RearLeft",
+            "edgeLength": "26",
+            "edgeLengthTop": "51.3",
+            "edgeOffset": "2.815",
+            "extraRidges": "yes",
+            "glassDepth": "150.5",
+            "glassThickness": "3",
+            "glassWidth": "230.5",
+            "rearCornerFix": "yes",
+            "tabHeightOffset": "-0.4",
+            "tabWidthOffset": "1.5",
+            "xAlign": "center",
+            "yAlign": "front"
+        }
+    },
+    "fileFormatVersion": "1"
+}

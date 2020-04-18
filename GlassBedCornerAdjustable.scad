@@ -1,22 +1,22 @@
 /* Adjustable Glass Bed Corner for FlashForge Creator Pro
- * By DrLex, v2.3 2019/04
+ * By DrLex, v2.4 2020/04
  * Released under Creative Commons - Attribution - Share Alike license */
 
 /* [Dimensions] */
 // The width of the aluminum plate of your heated bed (X axis). Enter all values in millimeters, with a decimal point (no comma).
-bedWidth = 231;
+bedWidth = 231; //[50:.1:400]
 
 // The depth of your heated bed (Y axis)
-bedDepth = 153.5;
+bedDepth = 153.5; //[50:.1:400]
 
 // The total thickness of your heated bed (Z) except the glass. This includes the heater PCB at the bottom and anything stuck to the top. You should also add a margin to ensure the corners will easily fit, I recommend to add 0.25mm. The default (9.2) is for the bed that came with my FFCP, with the blue surface stuck to it. Without the surface, it is 8.6mm.
 bedThickness = 9.2; //[3:0.1:12]
 
 // The width of your glass plate (X). If you have multiple and they vary slightly, take the smallest value.
-glassWidth = 226.8;
+glassWidth = 226.8; //[50:.1:400]
 
 // The depth of your glass plate (Y). Same remark as above.
-glassDepth = 149.3;
+glassDepth = 149.3; //[50:.1:400]
 
 // The thickness of your glass plate (Z)
 glassThickness = 3.0; //[2.0:0.1:10]
