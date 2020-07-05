@@ -18,9 +18,9 @@ This is a remix of multiple source models: the original ‘Flashforge Creator Pr
 
 This is yet another iteration of the adjustable glass bed bracket. This time, not only the bracket itself is adjustable, so is the model! This customizable bracket fits the FlashForge Creator Pro and printers with similar build plates with M3 bolts at their corners. The adjustable knob makes it easy to swap out glass plates if you have more than one, so you can start printing on another plate while the first one is still cooling down.
 
-The main advantage of this design is that it allows to mount the glass plate without anything sticking out above it. This means you never need to worry about the risk of your nozzles crashing into the brackets. This particular remix improves upon the originals by avoiding to sandwich the bracket between the bed and the nut. This offers a more balanced mount when tightening the knob, while also making it easier to move the bracket.
+The main advantage of this design is that it allows to mount the glass plate without anything sticking out above it. This means you never need to worry about the risk of your nozzles crashing into the brackets. This particular remix improves upon the originals by not sandwiching the bracket between the bed and the pin. This makes it much easier to adjust the bracket, and it also offers a more balanced mount.
 
-If you have yet to buy a glass plate, try to find one that is just a few millimeters smaller than the bed in both the X and Y direction, and has rounded or beveled edges. Such plates work best with these brackets. **Borosilicate glass** is highly preferred over regular glass. Avoid plates thicker than 4 mm: they will take long to heat, and because glass is a rather good thermal insulator, their surface temperature will be a lot lower than expected.
+If you have yet to buy a glass plate, try to find one that is just a few millimeters smaller than the bed in both the X and Y directions, and has rounded or beveled edges. Such plates work best with these brackets. **Borosilicate glass** is highly preferred over regular glass. Avoid plates thicker than 4 mm: they will take long to heat, and because glass is a rather good thermal insulator, their surface temperature will be a lot lower than expected.
 
 *Obvious disclaimer:* I am not responsible for any possible damage caused by the use of these brackets, not if you follow my advice, and certainly not if you ignore it.
  
@@ -34,11 +34,11 @@ If you have multiple supposedly “identical” plates, there will often be smal
 
 You can opt to mount the brackets on the front right and rear left corners, or front left and rear right. One pair of brackets is sufficient, but should you want to clamp all corners anyway, just run Customizer twice for both configurations. The models are marked so you know where to mount them: *FR = front right, FL = front left, RL = rear left, RR = rear right.*
 
-The default is to center the glass on the bed, but if you want to align one of its edges to an edge of the print bed, you can select that in the options. For instance, I have aligned mine to the front edge because my start G-code chops off oozed filament on that edge.
+The default is to center the glass on the print bed, but if you want to align one of its edges to an edge of the bed, you can select that in the options. For instance, I have aligned mine to the front edge because my start G-code chops off oozed filament on that edge.
 
-You can choose to add an extra pair of tiny *ridges* that may help to keep the plate clamped down. This is most useful if your glass plate has rounded or beveled edges, an explanation can be found at the bottom of this page.
+You can choose to add an extra pair of tiny *ridges* that may help to keep the plate clamped down, an explanation can be found below.
 
-The option *‘Rear Corner Fix’* in the advanced settings (enabled by default) compensates for an oddness of the FFCP (at least mine). Check the photo at the bottom of this page to see whether you need to disable this option or not.
+The option *‘Rear Corner Fix’* in the advanced settings compensates for an oddness of the FFCP (at least mine). This is also explained below. Don't forget to disable this if you are generating brackets for printers with a different bed design.
 
 If your glass plate is larger than the bed, you may want to enable *‘allowTabInset’* in the advanced settings to allow the glass to extend somewhat into the edges of the bracket. This option is disabled by default because it could make the bracket weaker. If the glass extends much more in one direction than the other, the inset will only occur for one edge to ensure alignment. Avoid that situation, and again: avoid plates larger than the bed altogether.
 
@@ -56,7 +56,7 @@ If you want to have the same clamp-from-above effect with glass that has straigh
 
 ![Photo 1](thumbs/RearCornerFix.jpg)[🔎](images/RearCornerFix.jpg)
 
-Check the bottom side of your heated bed at the rear (hint: use a mirror or take a snapshot with your smartphone) and compare it to the photo. If the screws look like in the left photo, you don't need to change anything to the defaults. If they look like in the right photo, disable the ‘Rear Corner Fix’ in the advanced settings.
+The bed on my FFCP isn't perfectly symmetrical and by default, the models will be generated to compensate for this. Check the bottom side of your heated bed at the rear (hint: use a mirror or take a snapshot with your smartphone) and compare it to the photo. If it looks like in the left photo, you don't need to change anything to the defaults. If it looks like in the right photo, disable the ‘Rear Corner Fix’ in the advanced settings.
  
 
 ## Choosing What Parts to Print
@@ -67,21 +67,23 @@ Next to the customized bracket model you created above, you will also need to pr
 * **Print pins and nuts with fine or coarse thread?** The coarse thread is easier to print but offers rougher adjustment. I recommend to try the fine thread first.
 * **Print regular or small knobs?** You only need the smaller ones if you have a thin bed and the regular size knob would stick out above the glass. Otherwise the regular ones are easier to adjust.
 * **Print regular or extra long pins?** The *XL* versions of the pins are slightly longer than the normal ones. Only print the longer ones if necessary, because printing them in ABS or PC will be even more difficult than the shorter ones. If these still are too short, you definitely need to find a glass plate that more closely matches the size of the heated bed.
-* **Print hollow or solid pins?** In most cases you should print the hollow one, it is less likely to warp during printing. Only use the solid one if you have a good reason. (There is no hollow version of the CoarseThread because its shape leaves no room for a hollow space.)
+* **Print hollow or solid pins?** In most cases you should print the hollow one, it is less likely to warp during printing. Only use the solid one if you have a good reason. (There is no hollow version of the coarseThread because its shape leaves no room for a hollow space.)
  
 
 ## Printing
 
 *This must be printed in a material that can withstand the heat of the heated bed!*
 
-The model that comes out of Customizer is ready to print _without supports_. The worst overhangs are 45°, which should be easy to print if you have tuned your printer well. A fan can help with the overhangs, but if you print ABS, either reduce fan speed if you can, or print hot and slowly.
+The model that comes out of Customizer is ready to print _without supports_. The worst overhangs are 45°, which should be easy to print if you have tuned your printer well. A fan can help with the overhangs but if you print ABS, either reduce fan speed if you can, or print hot and slowly.
 
-I printed the nuts and pins at 0.1 mm, the bracket at 0.2 mm. I printed extra slowly for additional strength. I used a brim on the corner pieces, but this was probably unnecessary. Print the pins at 100% infill. Infill for the other parts doesn't really matter, but I do recommend to print them with 3 perimeters for strength. To get the best detail on the threads of the pin, print slowly with the fan enabled if necessary. If you really have trouble printing the pins, you might try printing them upright, or use the ‘CoarseThread’ versions instead.
+If the pins seem too thick to fit inside the knobs, you can try re-printing the knobs scaled to 102% or more in the XY plane. (Mind that this is a sign that your printer is not printing accurately and you would be better off fixing the root cause of that problem than doing workarounds like this.)
+
+I printed the nuts and pins at 0.1 mm, the bracket at 0.2 mm. I printed extra slowly for additional strength. I used a brim on the corner pieces, but this was probably unnecessary. Print the pins at 100% infill. Infill for the other parts doesn't really matter, but I do recommend to print them with 3 perimeters for strength. To get the best detail on the threads of the pin, print slowly with the fan enabled if necessary. If you really have trouble printing the pins, you might try printing them upright, or use the ‘coarseThread’ versions instead.
 
 The **material** choice is important. Most crucial are the pins, because they are pushed against the heated bed, hence must be the most heat-resistant. What material you need, depends on the maximum temperature to which you will heat the bed during everyday use.
 From best to worst, here are some choices for the most common filaments:
-* **Polycarbonate (PC):** this is an excellent material because it can withstand all reasonable heated bed temperatures, therefore if you print the brackets with it, you will never have to worry about the bed temperature. I would recommend it if you will often print ABS at bed temperatures near 110°C. Unfortunately PC is difficult to print with. The absolute minimum extruder temperature is [260°C](http://reprap.org/wiki/Polycarbonate#Heater_Settings). You need an all-metal hot-end to print at that temperature, because the teflon liners in standard hot-ends will quickly degrade at that temperature, releasing toxic fumes. You can of course order a PC print through 3DHubs. If price is an issue, it is OK to have only the pins printed in PC, and print the brackets and knobs yourself in ABS.
-* **ABS:** this is a good material because it will not easily deform below 110°C. If you will mostly print PLA and PETG, and only occasionally ABS, then printing the brackets in ABS is perfectly OK. You might need to print new pins from time to time because they may bend after a while. To minimize deformation, always follow the instructions from the *Mounting* and *Using* sections!
+* **Polycarbonate (PC):** this is an excellent material because it can withstand all reasonable heated bed temperatures, therefore if you print the brackets with it, you will never have to worry about the bed temperature. I would recommend it if you will often print ABS at bed temperatures near 110°C. Unfortunately PC is difficult to print with. The absolute minimum extruder temperature is [260°C](http://reprap.org/wiki/Polycarbonate#Heater_Settings). You need an all-metal hot-end to print at that temperature, because the teflon liners in standard hot-ends will quickly degrade at that temperature, releasing toxic fumes. You can of course order a PC print through a service like 3DHubs. If price is an issue, it is OK to have only the pins printed in PC, and print the brackets and knobs yourself in ABS.
+* **ABS:** this is a good material because it will not easily deform below 110°C. If you will mostly print PLA and PETG, and only occasionally ABS, then ABS brackets are perfectly OK. You might need to print new pins from time to time because they may bend after a while. To minimize deformation, always follow the instructions from the *Mounting* and *Using* sections!
 * **PETG:** this is good if you will never heat the bed above 75°C, e.g. if you'll only print PLA and occasionally PETG. Don't use it if you will ever have to do an ABS print though.
 * **PLA:** I would not recommend this, unless you'll never heat the bed above 55°C. If you would ever need to heat the bed above 60°C, your PLA pins and brackets will deform or melt.
 
@@ -92,9 +94,9 @@ If you're the [AvE](https://www.youtube.com/user/arduinoversusevil) kind of guy 
 
 ## Mounting
 
-This design differs from the originals it was remixed from, in that you do not need to unscrew any of the existing nuts or bolts (except possibly on newer printers, see below). Instead, you need an additional M3 nut per pin. I recommend to use *nyloc* nuts. Mount the pin with the recess upwards, covering the existing M3 nut, and tighten the pin with the extra nut ([this tool](https://www.thingiverse.com/thing:1959962) may come in handy).
+This design differs from the originals it was remixed from, in that you do not need to unscrew any of the existing nuts or bolts (except possibly on newer printers, see below). Instead, you need an additional M3 nut per pin. I recommend to use *nyloc* nuts. Mount the pin with the recess upwards, covering the existing M3 nut, and tighten the pin with the extra M3 nut ([this tool](https://www.thingiverse.com/thing:1959962) may come in handy).
 
-See the rendered 3D image in the photo gallery for an illustration of how the complete assembly fits together. Again, even though this image shows the screws separately, you do not need to remove them. This was only rendered as such to help people who are building their printer from scratch.
+See the following rendered 3D image for an illustration of how the complete assembly fits together. Again, even though this image shows the screws separately, you do not need to remove them. This was only rendered as such to help people who are building their printer from scratch.
 
 ![Mounting](thumbs/bracket-mount.jpg)[🔎](images/bracket-mount.jpg)
 
@@ -109,7 +111,7 @@ If you don't have any M3 nuts to spare, you can also print the pin from [omegatr
 
 If you use the *spring-loaded knobs,* read the instructions from their README, and skip the following paragraph because those knobs make it redundant.
 
-Otherwise, the correct workflow is to first **preheat** your bed with the glass plate on top, and only tighten the knobs when the temperature is stable. The reason is that borosilicate glass has a much lower thermal expansion coefficient than the bed, therefore if you would tighten it cold and then heat, the bed will become larger w.r.t. the plate, and it may be loose enough to wiggle around. The whole point of these brackets is that it is very easy to adjust them, so it is better to adjust them when it is not really necessary, than not to adjust them when it is needed.
+Otherwise, the correct workflow is to first **preheat** your bed with the glass plate on top, and only tighten the knobs when the temperature is stable. The reason is that borosilicate glass has a much lower thermal expansion coefficient than the bed, therefore if you would tighten it cold and then heat, the bed will become larger w.r.t. the plate, and it may be loose enough to wiggle around. The whole point of these brackets is that it is very easy to adjust them, so it is better to adjust them when not really necessary, than *not* to adjust them when needed.
 
 Do not tighten the knobs like crazy. Just tighten them up to the point where the glass cannot move. Over-tightening may cause the plastic to deform, or the plate to lift if you did not print the brackets with accurate dimensions.
  
