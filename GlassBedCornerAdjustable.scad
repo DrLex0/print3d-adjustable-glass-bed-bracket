@@ -47,7 +47,7 @@ allowTabInset = "no"; //[yes, no]
 // Compensate for the fact that the rear screws on the FFCP are a bit further away from the rear edge than expected. Disable if this is not the case on your heated bed.
 rearCornerFix = "yes"; //[yes, no]
 
-// Length of the sizes. Mind that you won't gain much extra stability by making the bracket larger, this may even increase the risk of it deforming. Only change this if you know what you're doing.
+// Length of the sides. Mind that you won't gain much extra stability by making the bracket larger, this may even increase the risk of it deforming. Only change this if you know what you're doing.
 edgeLength = 26.0; //[22.0:0.1:50.0]
 
 /* [Hidden] */
