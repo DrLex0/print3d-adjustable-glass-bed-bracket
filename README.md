@@ -29,6 +29,8 @@ If you have yet to buy a glass plate, try to find one that is just a few millime
 
 Do not just print the example STL file, it is unlikely to fit your setup. Instead, open the `.scad` file in [OpenSCAD](https://www.openscad.org/) and **[use the OpenSCAD Customizer](https://www.dr-lex.be/3d-printing/customizer.html)** to generate brackets that match your particular bed and glass dimensions. The Customizer is limited to plates roughly the same width and depth as the heated bed itself.
 
+If you are making brackets for a popular combination of printer model and glass bed, consider saving your parameters as a new customizer preset. The preset will be saved in the `.json` file and it would be nice if this would then be included in this repository, such that other users having the same printer and bed could simply load that preset from the customizer UI. To allow this, send me your updated `.json` file (for instance through a pull request).
+
 Measure the *width, depth and height* (in other words *X, Y* and *Z* dimensions) of both the glass plate(s) and the bed (without glass). Next, enter those values in the corresponding fields in Customizer. Be as accurate as possible! Aim for at least 0.5 mm accuracy, this is possible with a simple ruler and a keen eye.
 If you have multiple supposedly “identical” plates, there will often be small differences between them: take the *minimum* width and depth across all plates.
 
