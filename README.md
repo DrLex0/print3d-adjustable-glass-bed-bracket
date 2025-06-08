@@ -127,7 +127,7 @@ If you don't foresee that you will ever print on the sheet again, you should rem
 
 I took omegatron's model, cleaned it up in Blender, and chopped off all the parts that would vary when making it customizable. I exported it to STL, and converted this to an OpenSCAD polyhedron using stl2scad, because Customizer does not allow importing STL files. Then I added the necessary customizable shapes using the usual SCAD magic.
 
-‘GlassBedNut-v3’ is the same shape as the original, although I cleaned up the STL a bit to avoid weird glitches in Slic3r.
+After 8 years, someone notified me that the fine screw threads of the pin and nuts didn't match… yeah. This flaw has been in the models since chewbone's original. It somehow still worked in most cases, but I finally corrected the threads in the v4 nut STL files for optimum performance.
 
 
 ## Updates
@@ -161,6 +161,9 @@ Wasted some of my precious time due to the stupid “Token Expired” bug in the
 
 ### 2019/04/07
 Added (advanced) option to change the length of the sides of the bracket.
+
+### 2025/06/08
+Fixed the incorrect fine screw thread pitch of the nut models, the new ones are now called ‘v4’.
 
 
 ## TAGS:

@@ -54,7 +54,7 @@ If you made the gaskets with regular silicone compound, they will be quite soft 
 
 ## Printing
 
-For the **knobs:** as with the originals, **ABS** is recommended for heat resistance. Print slowly and if possible, provide moderate cooling to get an accurate result. See the main README in the top level of this repository for more details.
+For the **knobs/nuts:** as with the originals, **ABS** is recommended for heat resistance. Print slowly and if possible, provide moderate cooling to get an accurate result. See the main README in the top level of this repository for more details.
 
 All these parts should be printed at 0.1 mm layers. Infill doesn't really matter.
 
@@ -78,6 +78,9 @@ The reason why I chose silicone gaskets as springs, is that silicone does not ea
 
 ### 2020/03/07
 Added printable spring/gasket that should work well in a soft TPU like NinjaFlex.
+
+### 2025/06/08
+Fixed the incorrect fine screw thread pitch of the nut models, the new ones are now called ‘v4’.
 
 
 ## TAGS
